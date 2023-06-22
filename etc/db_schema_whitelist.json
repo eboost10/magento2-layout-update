@@ -1,0 +1,33 @@
+{
+    "eboost_layout_update": {
+        "column": {
+            "layout_update_id": true,
+            "name": true,
+            "handle": true,
+            "xml": true,
+            "is_active": true,
+            "sort_order": true,
+            "updated_at": true
+        },
+        "index": {
+            "EBOOST_LAYOUT_UPDATE_HANDLE_IS_ACTIVE": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    },
+    "eboost_layout_link": {
+        "column": {
+            "layout_update_id": true,
+            "store_id": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "EBOOST_LAYOUT_LINK_STORE_ID_STORE_STORE_ID": true,
+            "EBOOST_LYT_LNK_LYT_UPDATE_ID_EBOOST_LYT_UPDATE_LYT_UPDATE_ID": true
+        },
+        "index": {
+            "EBOOST_LAYOUT_LINK_LAYOUT_UPDATE_ID": true
+        }
+    }
+}

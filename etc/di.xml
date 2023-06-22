@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="EBoost\LayoutUpdate\Api\LayoutUpdateRepositoryInterface" type="EBoost\LayoutUpdate\Model\LayoutUpdateRepository"/>
+    <preference for="EBoost\LayoutUpdate\Api\Data\LayoutUpdateInterface" type="EBoost\LayoutUpdate\Model\LayoutUpdate"/>
+    <preference for="EBoost\LayoutUpdate\Api\Data\LayoutUpdateSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+    <virtualType name="EBoost\LayoutUpdate\Model\ResourceModel\LayoutUpdate\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">eboost_layout_update</argument>
+            <argument name="resourceModel" xsi:type="string">EBoost\LayoutUpdate\Model\ResourceModel\LayoutUpdate\Collection</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="eboost_layoutupdate_layout_update_listing_data_source" xsi:type="string">EBoost\LayoutUpdate\Model\ResourceModel\LayoutUpdate\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

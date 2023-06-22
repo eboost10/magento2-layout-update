@@ -1,0 +1,32 @@
+{
+    "name": "eboost/layoutupdate",
+    "description": "",
+    "require": {
+        "php": "~5.5.0|~5.6.0|~7.0|~8.0",
+        "eboost/base": "*"
+    },
+    "suggest": {
+
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "EBoost\\LayoutUpdate\\": ""
+        }
+    },
+    "extra": {
+        "map": [
+            [
+                "*",
+                "EBoost/LayoutUpdate"
+            ]
+        ]
+    }
+}
