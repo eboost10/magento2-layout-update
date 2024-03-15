@@ -1,17 +1,14 @@
 {
-    "name": "eboost/layoutupdate",
-    "description": "",
+    "name": "eboosttech/magento2-layoutupdate",
+    "description": "Add Layout update xml for magento 2",
     "require": {
         "php": "~5.5.0|~5.6.0|~7.0|~8.0",
-        "eboost/base": "*"
-    },
-    "suggest": {
-
+        "eboosttech/magento2-base": "*"
     },
     "type": "magento2-module",
     "version": "1.0.0",
     "license": [
-
+        "BSD-4-Clause"
     ],
     "autoload": {
         "files": [
@@ -20,13 +17,5 @@
         "psr-4": {
             "EBoost\\LayoutUpdate\\": ""
         }
-    },
-    "extra": {
-        "map": [
-            [
-                "*",
-                "EBoost/LayoutUpdate"
-            ]
-        ]
     }
 }
