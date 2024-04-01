@@ -121,6 +121,7 @@
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="source" xsi:type="string">layout_update</item>
+                    <item name="rows" xsi:type="number">30</item>
                 </item>
             </argument>
             <settings>
