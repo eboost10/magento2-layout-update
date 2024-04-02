@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="EBoost_LayoutUpdate::eboost_layoutupdate_layout_update" title="Custom Layout Update" module="EBoost_LayoutUpdate" sortOrder="9999" resource="EBoost_LayoutUpdate::layout" parent="Magento_Backend::content_elements" action="eboost_layoutupdate/layoutupdate/index"/>
+        <add id="EBoost_LayoutUpdate::eboost_layoutupdate_layout_update" title="Custom Layout Update XML" module="EBoost_LayoutUpdate" sortOrder="9999" resource="EBoost_LayoutUpdate::layout" parent="EBoost_Base::top_level" action="eboost_layoutupdate/layoutupdate/index"/>
     </menu>
 </config>

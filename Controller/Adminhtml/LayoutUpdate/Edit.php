@@ -52,11 +52,11 @@ class Edit extends \EBoost\LayoutUpdate\Controller\Adminhtml\LayoutUpdate
         /** @var \Magento\Backend\Model\View\Result\Page $resultPage */
         $resultPage = $this->resultPageFactory->create();
         $this->initPage($resultPage)->addBreadcrumb(
-            $id ? __('Edit Layout Update') : __('New Layout Update'),
-            $id ? __('Edit Layout Update') : __('New Layout Update')
+            $id ? __('Edit Layout XML') : __('New Layout XML'),
+            $id ? __('Edit Layout XML') : __('New Layout XML')
         );
         $resultPage->getConfig()->getTitle()->prepend(__('Layout Updates'));
-        $resultPage->getConfig()->getTitle()->prepend($model->getId() ? __('Edit Layout Update %1', $model->getId()) : __('New Layout Update'));
+        $resultPage->getConfig()->getTitle()->prepend($model->getId() ? __('Edit Layout XML %1', $model->getName()) : __('New Layout XML'));
         return $resultPage;
     }
 }
