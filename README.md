@@ -35,7 +35,16 @@ Then input data for the form
 
 save and clear cache, then go to frontend page to see result
 
-## How to detect handle for a page
+## How to get a handle of a page
+***Note: should only use on dev/staging servers.***
+
+Go to menu `Eboost > Debug Configuration` 
+![](docs/xml-layout-configuration-menu.png)
+Open section `Debug` and change value of `Enable Layout Debugging Dump On Storefront` to `Yes`
+![](docs/xml-layout-configuration.png)
+In frontend, go to a page which you want to view handle and click button `x` on bottom right, All handles of the page are in section `Handles`
+![](docs/xml-layout-debug-button.png)
+![](docs/xml-layout-debug-content.png)
 
 
 ## Bugs/Feature Requests & Contribution
