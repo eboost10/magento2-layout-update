@@ -4,4 +4,7 @@
     <type name="Magento\Framework\View\Model\Layout\Merge">
         <plugin sortOrder="1" name="eBoostLayoutUpdateMerge" type="EBoost\LayoutUpdate\Plugin\Magento\Framework\View\Model\Layout\Merge"/>
     </type>
+    <type name="\Magento\Framework\View\LayoutInterface">
+        <plugin sortOrder="100" name="eBoostLayoutUpdate" type="EBoost\LayoutUpdate\Plugin\Magento\Framework\View\Layout"/>
+    </type>
 </config>
