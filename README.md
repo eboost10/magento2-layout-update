@@ -1,6 +1,8 @@
 # EBoost - Custom layout Update XML (For developer)
 
-This simple module adds a new layout update xml for handler, allowing you to update layout xml without update code.
+***Note: If you don't know what is a handler. Please follow the document below to get it ***
+
+This simple module adds a new layout update XML for a handler, allowing you to update layout XML directly in the backend without updating code. It allows you to add XML to update the layout of any pages that you would like based on the handler of the page. It will not affect other pages.
 
 ## Installation
 
@@ -24,25 +26,43 @@ php bin/magento setup:upgrade
 
 ## Usage
 
-After installed, you can go to `Eboost > Custom Layout Update XML` then click `Add new` to create XML layout
+After the extension has been installed. Follow these steps: 
+
+1. Go to `Eboost > Custom Layout Update XML` then click `Add new` button to create XML layout
 
 ![Layout Update XML Menu Screenshot](docs/xml-layout-menu.png)
 ![Layout Update XML Add New Button Screenshot](docs/xml-layout-add-new-button.png)
 
-Then input data for the form
+2. Enter data for the form
 
 ![Layout Update XML Add New Form Screenshot](docs/xml-layout-add-new-form.png)
 
-save and clear cache, then go to frontend page to see result
+3. Save and clear cache
 
-## How to get a handle of a page
-***Note: should only use on dev/staging servers.***
+4. Go to Frontend to see result
 
-Go to menu `Eboost > Debug Configuration` 
+## How to see a handle of a page
+
+***Note: it should be used on dev/staging servers. ***
+
+1. Go to menu `Eboost > Debug Configuration` 
+
 ![](docs/xml-layout-configuration-menu.png)
-Open section `Debug` and change value of `Enable Layout Debugging Dump On Storefront` to `Yes`
+
+2. Open section `Debug`
+
+3. Change value of `Enable Layout Debugging Dump On Storefront` to `Yes`
+
 ![](docs/xml-layout-configuration.png)
-In frontend, go to a page which you want to view handle and click button `x` on bottom right, All handles of the page are in section `Handles`
+
+4. Go to Frontend
+
+5. Go to the page that you want to get the handle 
+
+6. Click  `x` button on bottom right conner
+
+7. All handles will be shown  in `Handles` section 
+
 ![](docs/xml-layout-debug-button.png)
 ![](docs/xml-layout-debug-content.png)
 
