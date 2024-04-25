@@ -49,7 +49,7 @@ After the extension has been installed. Follow these steps:
 
 ![](docs/xml-layout-configuration-menu.png)
 
-2. Open section `Debug`
+2. Open  `Debug` section
 
 3. Change value of `Enable Layout Debugging Dump On Storefront` to `Yes`
 
@@ -61,9 +61,11 @@ After the extension has been installed. Follow these steps:
 
 6. Click  `x` button on bottom right conner
 
+![](docs/xml-layout-debug-button.png)
+
 7. All handles will be shown  in `Handles` section 
 
-![](docs/xml-layout-debug-button.png)
+
 ![](docs/xml-layout-debug-content.png)
 
 
