@@ -1,6 +1,5 @@
 # EBoost - Custom layout Update XML (For developer)
 
-***Note: If you don't know what is a handler. Please follow the document below to get it ***
 
 This simple module adds a new layout update XML for a handler, allowing you to update layout XML directly in the backend without updating code. It allows you to add XML to update the layout of any pages that you would like based on the handler of the page. It will not affect other pages.
 
@@ -34,6 +33,8 @@ After the extension has been installed. Follow these steps:
 ![Layout Update XML Add New Button Screenshot](docs/xml-layout-add-new-button.png)
 
 2. Enter data for the form
+
+***Note: If you don't know what is a handler. Please follow the document below to get it ***
 
 ![Layout Update XML Add New Form Screenshot](docs/xml-layout-add-new-form.png)
 
